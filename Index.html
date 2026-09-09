@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rehan | Fullstack Developer & Creative Coder</title>
+  <meta name="description" content="Portofolio personal Rehan — Fullstack Developer, UI/UX Designer, dan Creative Coder. Membangun pengalaman digital yang elegan & fungsional.">
+  <meta name="keywords" content="portfolio, fullstack developer, web developer, UI/UX, creative coder">
+  <meta name="author" content="Rehan">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Rehan | Fullstack Developer & Creative Coder">
+  <meta property="og:description" content="Membangun pengalaman digital yang elegan & fungsional.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+  <!-- Lenis Smooth Scroll -->
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <!-- ==================== CUSTOM CURSOR ==================== -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- ==================== MOBILE NAV OVERLAY ==================== -->
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">R<span>.</span></a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#hero" class="nav-link active" data-section="hero">Home</a></li>
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+        <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+          <i data-lucide="sun" class="icon-sun"></i>
+          <i data-lucide="moon" class="icon-moon"></i>
+        </button>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section class="hero" id="hero">
+    <canvas class="particle-canvas" id="particleCanvas"></canvas>
+
+    <div class="floating-elements">
+      <div class="float-el float-1"></div>
+      <div class="float-el float-2"></div>
+      <div class="float-el float-3"></div>
+      <div class="float-el float-4"></div>
+    </div>
+
+    <div class="container hero-content">
+      <p class="hero-label reveal" style="--delay: 0s">👋 Hai, saya</p>
+      <h1 class="hero-name reveal" style="--delay: 0.1s">
+        Rehan<span class="gradient-text">.</span>
+      </h1>
+      <div class="hero-typing reveal" style="--delay: 0.2s">
+        <span>Saya seorang </span>
+        <span class="typing-wrapper">
+          <span class="typing-text" id="typingText"></span>
+          <span class="typing-cursor">|</span>
+        </span>
+      </div>
+      <p class="hero-desc reveal" style="--delay: 0.3s">
+        Membangun pengalaman digital yang elegan &amp; fungsional.<br>
+        Mengubah ide menjadi kode yang berdampak.
+      </p>
+      <div class="hero-cta reveal" style="--delay: 0.4s">
+        <a href="#projects" class="btn btn-primary magnetic-btn">
+          <span>Lihat Karya Saya</span>
+          <i data-lucide="arrow-down-right"></i>
+        </a>
+        <a href="#" class="btn btn-ghost magnetic-btn">
+          <span>Unduh CV</span>
+          <i data-lucide="download"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT SECTION ==================== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label reveal">Tentang Saya</p>
+        <h2 class="section-title reveal" style="--delay: 0.1s">Mengenal Lebih Dekat</h2>
+        <p class="section-subtitle reveal" style="--delay: 0.15s">
+          Seorang developer yang passionate dalam menciptakan solusi digital yang inovatif dan berdampak.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image-wrapper reveal-left">
+          <div class="avatar-container">
+            <div class="avatar-ring"></div>
+            <div class="avatar-img">
+              <div class="avatar-placeholder">R</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-text reveal-right">
+          <h3>Fullstack Developer &amp; Creative Mind</h3>
+          <p>
+            Halo! Saya <span class="about-highlight">Rehan</span>, seorang Fullstack Developer
+            berbasis di Indonesia dengan passion dalam membangun aplikasi web dan mobile yang tidak
+            hanya berfungsi dengan baik, tetapi juga memberikan pengalaman pengguna yang luar biasa.
+          </p>
+          <p>
+            Dengan keahlian di <span class="about-highlight">React</span>,
+            <span class="about-highlight">Node.js</span>, dan
+            <span class="about-highlight">UI/UX Design</span>, saya menggabungkan estetika visual
+            dengan fungsionalitas teknis untuk menciptakan produk digital yang memorable.
+          </p>
+
+          <div class="about-stats stagger-children">
+            <div class="stat-item hover-glow">
+              <div class="stat-number">
+                <span data-count="3">0</span><span class="stat-suffix">+</span>
+              </div>
+              <div class="stat-label">Tahun Pengalaman</div>
+            </div>
+            <div class="stat-item hover-glow">
+              <div class="stat-number">
+                <span data-count="20">0</span><span class="stat-suffix">+</span>
+              </div>
+              <div class="stat-label">Proyek Selesai</div>
+            </div>
+            <div class="stat-item hover-glow">
+              <div class="stat-number">
+                <span data-count="100">0</span><span class="stat-suffix">%</span>
+              </div>
+              <div class="stat-label">Klien Puas</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SKILLS SECTION ==================== -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label reveal">Keahlian</p>
+        <h2 class="section-title reveal" style="--delay: 0.1s">Skills &amp; Tech Stack</h2>
+        <p class="section-subtitle reveal" style="--delay: 0.15s">
+          Teknologi dan tools yang saya gunakan untuk membangun pengalaman digital.
+        </p>
+      </div>
+    </div>
+
+    <!-- Infinite Marquee -->
+    <div class="skills-marquee">
+      <div class="marquee-track">
+        <div class="marquee-item"><span class="dot"></span>JavaScript</div>
+        <div class="marquee-item"><span class="dot"></span>React</div>
+        <div class="marquee-item"><span class="dot"></span>Vue.js</div>
+        <div class="marquee-item"><span class="dot"></span>Node.js</div>
+        <div class="marquee-item"><span class="dot"></span>TypeScript</div>
+        <div class="marquee-item"><span class="dot"></span>Python</div>
+        <div class="marquee-item"><span class="dot"></span>Next.js</div>
+        <div class="marquee-item"><span class="dot"></span>Tailwind CSS</div>
+        <div class="marquee-item"><span class="dot"></span>Flutter</div>
+        <div class="marquee-item"><span class="dot"></span>Figma</div>
+        <div class="marquee-item"><span class="dot"></span>Docker</div>
+        <div class="marquee-item"><span class="dot"></span>MongoDB</div>
+        <div class="marquee-item"><span class="dot"></span>PostgreSQL</div>
+        <div class="marquee-item"><span class="dot"></span>Git</div>
+        <div class="marquee-item"><span class="dot"></span>GraphQL</div>
+        <div class="marquee-item"><span class="dot"></span>Firebase</div>
+        <!-- Duplicate for infinite scroll -->
+        <div class="marquee-item"><span class="dot"></span>JavaScript</div>
+        <div class="marquee-item"><span class="dot"></span>React</div>
+        <div class="marquee-item"><span class="dot"></span>Vue.js</div>
+        <div class="marquee-item"><span class="dot"></span>Node.js</div>
+        <div class="marquee-item"><span class="dot"></span>TypeScript</div>
+        <div class="marquee-item"><span class="dot"></span>Python</div>
+        <div class="marquee-item"><span class="dot"></span>Next.js</div>
+        <div class="marquee-item"><span class="dot"></span>Tailwind CSS</div>
+        <div class="marquee-item"><span class="dot"></span>Flutter</div>
+        <div class="marquee-item"><span class="dot"></span>Figma</div>
+        <div class="marquee-item"><span class="dot"></span>Docker</div>
+        <div class="marquee-item"><span class="dot"></span>MongoDB</div>
+        <div class="marquee-item"><span class="dot"></span>PostgreSQL</div>
+        <div class="marquee-item"><span class="dot"></span>Git</div>
+        <div class="marquee-item"><span class="dot"></span>GraphQL</div>
+        <div class="marquee-item"><span class="dot"></span>Firebase</div>
+      </div>
+    </div>
+
+    <!-- Skill Cards Grid -->
+    <div class="container">
+      <div class="skills-grid stagger-children">
+        <div class="skill-card hover-glow">
+          <span class="skill-icon">⚡</span>
+          <span class="skill-name">JavaScript</span>
+          <div class="skill-bar"><div class="skill-bar-fill" data-width="95"></div></div>
+        </div>
+        <div class="skill-card hover-glow">
+          <span class="skill-icon">⚛️</span>
+          <span class="skill-name">React</span>
+          <div class="skill-bar"><div class="skill-bar-fill" data-width="90"></div></div>
+        </div>
+        <div class="skill-card hover-glow">
+          <span class="skill-icon">🟢</span>
+          <span class="skill-name">Node.js</span>
+          <div class="skill-bar"><div class="skill-bar-fill" data-width="88"></div></div>
+        </div>
+        <div class="skill-card hover-glow">
+          <span class="skill-icon">🔷</span>
+          <span class="skill-name">TypeScript</span>
+          <div class="skill-bar"><div class="skill-bar-fill" data-width="85"></div></div>
+        </div>
+        <div class="skill-card hover-glow">
+          <span class="skill-icon">🐍</span>
+          <span class="skill-name">Python</span>
+          <div class="skill-bar"><div class="skill-bar-fill" data-width="80"></div></div>
+        </div>
+        <div class="skill-card hover-glow">
+          <span class="skill-icon">🎨</span>
+          <span class="skill-name">Figma</span>
+          <div class="skill-bar"><div class="skill-bar-fill" data-width="85"></div></div>
+        </div>
+        <div class="skill-card hover-glow">
+          <span class="skill-icon">🐳</span>
+          <span class="skill-name">Docker</span>
+          <div class="skill-bar"><div class="skill-bar-fill" data-width="75"></div></div>
+        </div>
+        <div class="skill-card hover-glow">
+          <span class="skill-icon">🍃</span>
+          <span class="skill-name">MongoDB</span>
+          <div class="skill-bar"><div class="skill-bar-fill" data-width="82"></div></div>
+        </div>
+        <div class="skill-card hover-glow">
+          <span class="skill-icon">🌊</span>
+          <span class="skill-name">Tailwind</span>
+          <div class="skill-bar"><div class="skill-bar-fill" data-width="92"></div></div>
+        </div>
+        <div class="skill-card hover-glow">
+          <span class="skill-icon">📱</span>
+          <span class="skill-name">Flutter</span>
+          <div class="skill-bar"><div class="skill-bar-fill" data-width="70"></div></div>
+        </div>
+        <div class="skill-card hover-glow">
+          <span class="skill-icon">🐘</span>
+          <span class="skill-name">PostgreSQL</span>
+          <div class="skill-bar"><div class="skill-bar-fill" data-width="78"></div></div>
+        </div>
+        <div class="skill-card hover-glow">
+          <span class="skill-icon">🔥</span>
+          <span class="skill-name">Firebase</span>
+          <div class="skill-bar"><div class="skill-bar-fill" data-width="83"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PROJECTS SECTION ==================== -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label reveal">Portofolio</p>
+        <h2 class="section-title reveal" style="--delay: 0.1s">Proyek Terpilih</h2>
+        <p class="section-subtitle reveal" style="--delay: 0.15s">
+          Beberapa karya terbaik yang telah saya kerjakan.
+        </p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="project-filters reveal" style="--delay: 0.2s">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="webapp">Web App</button>
+        <button class="filter-btn" data-filter="uiux">UI/UX</button>
+        <button class="filter-btn" data-filter="mobile">Mobile</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid">
+
+        <!-- Project 1: NexGen Dashboard -->
+        <div class="project-card reveal" style="--delay: 0.1s" data-category="webapp" data-project="1">
+          <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+            <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">NexGen Dashboard</h3>
+            <p class="project-desc">Platform analytics real-time dengan visualisasi data interaktif dan antarmuka yang intuitif.</p>
+            <div class="project-tags">
+              <span class="project-tag">React</span>
+              <span class="project-tag">TypeScript</span>
+              <span class="project-tag">D3.js</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link" onclick="event.stopPropagation()">
+                <i data-lucide="external-link"></i>
+                <span>Demo</span>
+              </a>
+              <a href="#" class="project-link" onclick="event.stopPropagation()">
+                <i data-lucide="github"></i>
+                <span>Code</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: FitTrack Pro -->
+        <div class="project-card reveal" style="--delay: 0.2s" data-category="mobile" data-project="2">
+          <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+            <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.42 4.58a5.4 5.4 0 0 0-7.65 0l-.77.78-.77-.78a5.4 5.4 0 0 0-7.65 0C1.46 6.7 1.33 10.28 4 13l8 8 8-8c2.67-2.72 2.54-6.3.42-8.42z"/></svg>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">FitTrack Pro</h3>
+            <p class="project-desc">Aplikasi pelacak kebugaran canggih dengan perencanaan workout berbasis AI dan integrasi wearable.</p>
+            <div class="project-tags">
+              <span class="project-tag">React Native</span>
+              <span class="project-tag">Firebase</span>
+              <span class="project-tag">Redux</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link" onclick="event.stopPropagation()">
+                <i data-lucide="external-link"></i>
+                <span>Demo</span>
+              </a>
+              <a href="#" class="project-link" onclick="event.stopPropagation()">
+                <i data-lucide="github"></i>
+                <span>Code</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: ShopVerse -->
+        <div class="project-card reveal" style="--delay: 0.3s" data-category="webapp" data-project="3">
+          <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+            <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">ShopVerse</h3>
+            <p class="project-desc">Platform e-commerce modern dengan AR preview, pencarian cerdas AI, dan checkout seamless.</p>
+            <div class="project-tags">
+              <span class="project-tag">Next.js</span>
+              <span class="project-tag">Stripe</span>
+              <span class="project-tag">Prisma</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link" onclick="event.stopPropagation()">
+                <i data-lucide="external-link"></i>
+                <span>Demo</span>
+              </a>
+              <a href="#" class="project-link" onclick="event.stopPropagation()">
+                <i data-lucide="github"></i>
+                <span>Code</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Wanderlust -->
+        <div class="project-card reveal" style="--delay: 0.1s" data-category="uiux" data-project="4">
+          <div class="project-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+            <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Wanderlust</h3>
+            <p class="project-desc">Desain UI/UX lengkap untuk platform pemesanan perjalanan dengan design system komprehensif.</p>
+            <div class="project-tags">
+              <span class="project-tag">Figma</span>
+              <span class="project-tag">Prototyping</span>
+              <span class="project-tag">Design System</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link" onclick="event.stopPropagation()">
+                <i data-lucide="external-link"></i>
+                <span>Demo</span>
+              </a>
+              <a href="#" class="project-link" onclick="event.stopPropagation()">
+                <i data-lucide="github"></i>
+                <span>Code</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: DevConnect -->
+        <div class="project-card reveal" style="--delay: 0.2s" data-category="webapp" data-project="5">
+          <div class="project-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+            <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m16 18 2 2 4-4"/><path d="M21 15.171A7 7 0 0 0 17 3a6.98 6.98 0 0 0-5 2.094A6.98 6.98 0 0 0 7 3a7 7 0 0 0-4 12.171"/><circle cx="12" cy="12" r="3"/></svg>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">DevConnect</h3>
+            <p class="project-desc">Jaringan sosial developer untuk berbagi kode, kolaborasi proyek, dan membangun portofolio.</p>
+            <div class="project-tags">
+              <span class="project-tag">Vue.js</span>
+              <span class="project-tag">GraphQL</span>
+              <span class="project-tag">PostgreSQL</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link" onclick="event.stopPropagation()">
+                <i data-lucide="external-link"></i>
+                <span>Demo</span>
+              </a>
+              <a href="#" class="project-link" onclick="event.stopPropagation()">
+                <i data-lucide="github"></i>
+                <span>Code</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6: FoodSwift -->
+        <div class="project-card reveal" style="--delay: 0.3s" data-category="mobile" data-project="6">
+          <div class="project-image" style="background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);">
+            <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a8 8 0 0 0-8 8c0 5.4 7.05 11.5 7.35 11.76a1 1 0 0 0 1.3 0C13 21.5 20 15.4 20 10a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">FoodSwift</h3>
+            <p class="project-desc">Aplikasi pesan antar makanan dengan pelacakan real-time dan program loyalitas pelanggan.</p>
+            <div class="project-tags">
+              <span class="project-tag">Flutter</span>
+              <span class="project-tag">Dart</span>
+              <span class="project-tag">Socket.io</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link" onclick="event.stopPropagation()">
+                <i data-lucide="external-link"></i>
+                <span>Demo</span>
+              </a>
+              <a href="#" class="project-link" onclick="event.stopPropagation()">
+                <i data-lucide="github"></i>
+                <span>Code</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== EXPERIENCE / TIMELINE ==================== -->
+  <section class="experience" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label reveal">Pengalaman</p>
+        <h2 class="section-title reveal" style="--delay: 0.1s">Perjalanan Karir</h2>
+        <p class="section-subtitle reveal" style="--delay: 0.15s">
+          Setiap langkah membentuk keahlian dan perspektif saya sebagai developer.
+        </p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-line">
+          <div class="timeline-progress"></div>
+        </div>
+
+        <div class="timeline-item reveal-left" style="--delay: 0.1s">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content hover-glow">
+            <span class="timeline-date">2024 — Sekarang</span>
+            <h3 class="timeline-title">Senior Frontend Developer</h3>
+            <p class="timeline-company">TechCorp Indonesia</p>
+            <p class="timeline-desc">
+              Memimpin tim frontend dalam membangun platform SaaS berskala besar. 
+              Mengimplementasikan arsitektur micro-frontend dan meningkatkan performa 
+              aplikasi hingga 40%.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-right" style="--delay: 0.2s">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content hover-glow">
+            <span class="timeline-date">2022 — 2024</span>
+            <h3 class="timeline-title">Fullstack Developer</h3>
+            <p class="timeline-company">Digital Nusantara Agency</p>
+            <p class="timeline-desc">
+              Mengembangkan lebih dari 15 proyek klien mulai dari landing page hingga 
+              aplikasi web kompleks. Spesialisasi dalam React, Node.js, dan integrasi API.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-left" style="--delay: 0.3s">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content hover-glow">
+            <span class="timeline-date">2021 — 2022</span>
+            <h3 class="timeline-title">Junior Web Developer</h3>
+            <p class="timeline-company">StartupHub</p>
+            <p class="timeline-desc">
+              Memulai karir profesional dengan membangun fitur-fitur untuk platform 
+              edukasi online. Belajar best practices dalam clean code dan agile development.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-right" style="--delay: 0.4s">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content hover-glow">
+            <span class="timeline-date">2017 — 2021</span>
+            <h3 class="timeline-title">S1 Teknik Informatika</h3>
+            <p class="timeline-company">Universitas Indonesia</p>
+            <p class="timeline-desc">
+              Membangun fondasi kuat dalam Computer Science, algoritma, dan pemrograman. 
+              Aktif dalam komunitas coding dan memenangkan beberapa hackathon.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT SECTION ==================== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label reveal">Kontak</p>
+        <h2 class="section-title reveal" style="--delay: 0.1s">Mari Berkolaborasi</h2>
+        <p class="section-subtitle reveal" style="--delay: 0.15s">
+          Punya proyek menarik? Saya selalu terbuka untuk berdiskusi dan berkolaborasi.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Form -->
+        <form class="contact-form reveal-left" id="contactForm" autocomplete="off">
+          <div class="form-group">
+            <input type="text" class="form-input" id="formName" name="name" placeholder=" " required>
+            <label for="formName" class="floating-label">Nama Lengkap</label>
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-input" id="formEmail" name="email" placeholder=" " required>
+            <label for="formEmail" class="floating-label">Email</label>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-input" id="formSubject" name="subject" placeholder=" ">
+            <label for="formSubject" class="floating-label">Subjek</label>
+          </div>
+          <div class="form-group">
+            <textarea class="form-input" id="formMessage" name="message" placeholder=" " required rows="5"></textarea>
+            <label for="formMessage" class="floating-label">Pesan</label>
+          </div>
+          <button type="submit" class="submit-btn magnetic-btn">
+            <span class="btn-text">
+              Kirim Pesan
+              <i data-lucide="send"></i>
+            </span>
+            <span class="btn-loading">
+              <div class="spinner"></div>
+              Mengirim...
+            </span>
+            <span class="btn-success">
+              <i data-lucide="check-circle"></i>
+              Terkirim!
+            </span>
+          </button>
+        </form>
+
+        <!-- Contact Info -->
+        <div class="contact-info reveal-right">
+          <div class="contact-info-text">
+            <h3>Let's Talk! 💬</h3>
+            <p>
+              Jangan ragu untuk menghubungi saya melalui form di samping atau langsung 
+              melalui email dan sosial media di bawah ini. Saya akan merespons secepat mungkin!
+            </p>
+          </div>
+
+          <div class="contact-details">
+            <a href="mailto:rehan@example.com" class="contact-detail-item">
+              <i data-lucide="mail"></i>
+              <span>rehan@example.com</span>
+            </a>
+            <a href="#" class="contact-detail-item">
+              <i data-lucide="map-pin"></i>
+              <span>Jakarta, Indonesia</span>
+            </a>
+            <a href="#" class="contact-detail-item">
+              <i data-lucide="clock"></i>
+              <span>Available for Freelance</span>
+            </a>
+          </div>
+
+          <div class="social-links">
+            <a href="https://github.com" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+              <i data-lucide="github"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+              <i data-lucide="linkedin"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
+              <i data-lucide="instagram"></i>
+            </a>
+            <a href="mailto:rehan@example.com" class="social-link" aria-label="Email">
+              <i data-lucide="mail"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p class="footer-text">
+        &copy; 2024 <span>Rehan</span>. Dibuat dengan ❤️ dan banyak ☕
+      </p>
+      <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i data-lucide="arrow-up"></i>
+      </button>
+    </div>
+  </footer>
+
+  <!-- ==================== PROJECT MODAL ==================== -->
+  <div class="modal-overlay" id="projectModal">
+    <div class="modal-content">
+      <button class="modal-close">
+        <i data-lucide="x"></i>
+      </button>
+      <div class="modal-image">
+        <img src="" alt="Project preview">
+      </div>
+      <div class="modal-body">
+        <h2 class="modal-title"></h2>
+        <div class="modal-tags"></div>
+        <p class="modal-description"></p>
+        <div class="modal-links"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== SCRIPTS ==================== -->
+  <script src="js/particles.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
