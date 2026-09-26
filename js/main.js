@@ -252,7 +252,7 @@
     const projectData = {
       1: {
         title: 'NexGen Dashboard',
-        image: '',
+        image: 'img/Screenshot%20(66).png',
         tags: ['React', 'TypeScript', 'D3.js', 'Node.js'],
         description: 'Platform analytics real-time yang dirancang untuk memvisualisasikan data bisnis kompleks dengan antarmuka yang intuitif. Dashboard ini mendukung lebih dari 10 jenis grafik interaktif, filter data dinamis, dan ekspor laporan otomatis. Dibangun dengan arsitektur micro-frontend untuk skalabilitas optimal.',
         demo: '#',
@@ -261,7 +261,7 @@
       },
       2: {
         title: 'FitTrack Pro',
-        image: '',
+        image: 'img/Screenshot%20(65).png',
         tags: ['React Native', 'Firebase', 'Redux', 'HealthKit'],
         description: 'Aplikasi pelacak kebugaran canggih yang membantu pengguna memantau aktivitas harian, detak jantung, kualitas tidur, dan nutrisi. Dilengkapi dengan perencanaan workout berbasis AI, tantangan komunitas, dan integrasi dengan perangkat wearable populer.',
         demo: '#',
@@ -270,7 +270,7 @@
       },
       3: {
         title: 'ShopVerse',
-        image: '',
+        image: 'img/Screenshot%20(56).png',
         tags: ['Next.js', 'Stripe', 'Prisma', 'Tailwind'],
         description: 'Platform e-commerce modern dengan pengalaman belanja yang seamless. Fitur unggulan termasuk AR product preview, pencarian cerdas berbasis AI, sistem rekomendasi personal, checkout satu klik, dan dashboard analytics untuk penjual.',
         demo: '#',
@@ -279,7 +279,7 @@
       },
       4: {
         title: 'Wanderlust',
-        image: '',
+        image: 'img/Screenshot%20from%202026-09-10%2014-47-59.png',
         tags: ['Figma', 'Prototyping', 'User Research', 'Design System'],
         description: 'Desain UI/UX lengkap untuk platform pemesanan perjalanan. Proyek ini mencakup riset pengguna mendalam, wireframing, prototyping interaktif, dan pembuatan design system komprehensif. Fokus pada aksesibilitas dan pengalaman pengguna lintas budaya.',
         demo: '#',
