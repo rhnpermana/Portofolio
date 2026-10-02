@@ -264,8 +264,8 @@
         image: 'img/Screenshot%20(65).png',
         tags: ['React Native', 'Firebase', 'Redux', 'HealthKit'],
         description: 'Aplikasi pelacak kebugaran canggih yang membantu pengguna memantau aktivitas harian, detak jantung, kualitas tidur, dan nutrisi. Dilengkapi dengan perencanaan workout berbasis AI, tantangan komunitas, dan integrasi dengan perangkat wearable populer.',
-        demo: '#',
-        github: '#',
+        demo: 'https://juarastyle.vercel.app/',
+        github: 'https://github.com/rhnpermana/juarastyle.git',
         gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
       },
       3: {
@@ -282,8 +282,8 @@
         image: 'img/Screenshot%20from%202026-09-10%2014-47-59.png',
         tags: ['Figma', 'Prototyping', 'User Research', 'Design System'],
         description: 'Desain UI/UX lengkap untuk platform pemesanan perjalanan. Proyek ini mencakup riset pengguna mendalam, wireframing, prototyping interaktif, dan pembuatan design system komprehensif. Fokus pada aksesibilitas dan pengalaman pengguna lintas budaya.',
-        demo: '#',
-        github: '#',
+        demo: 'https://dsbarbershop.vercel.app/',
+        github: 'https://github.com/rhnpermana/district.git',
         gradient: 'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)',
       },
       5: {
