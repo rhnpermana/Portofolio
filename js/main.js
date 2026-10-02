@@ -260,10 +260,10 @@
         gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
       },
       2: {
-        title: 'FitTrack Pro',
+        title: 'marketplace_juarastyle',
         image: 'img/Screenshot%20(65).png',
-        tags: ['React Native', 'Firebase', 'Redux', 'HealthKit'],
-        description: 'Aplikasi pelacak kebugaran canggih yang membantu pengguna memantau aktivitas harian, detak jantung, kualitas tidur, dan nutrisi. Dilengkapi dengan perencanaan workout berbasis AI, tantangan komunitas, dan integrasi dengan perangkat wearable populer.',
+        tags: ['Vite', 'Laravel', 'Mysql', 'Tailwind'],
+        description: 'website marketplace untuk produk style outfit untuk pasar anak muda khusus nya para pelajar/mahasiswa.website ini memang masih tahap pengembangan dan anda bisa mencoba lewat fitur mode demo dibawah ini   .',
         demo: 'https://juarastyle.vercel.app/',
         github: 'https://github.com/rhnpermana/juarastyle.git',
         gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
@@ -278,7 +278,7 @@
         gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
       },
       4: {
-        title: 'Wanderlust',
+        title: 'district_barbershop',
         image: 'img/Screenshot%20from%202026-09-10%2014-47-59.png',
         tags: ['Figma', 'Prototyping', 'User Research', 'Design System'],
         description: 'Desain UI/UX lengkap untuk platform pemesanan perjalanan. Proyek ini mencakup riset pengguna mendalam, wireframing, prototyping interaktif, dan pembuatan design system komprehensif. Fokus pada aksesibilitas dan pengalaman pengguna lintas budaya.',
