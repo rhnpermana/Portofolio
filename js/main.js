@@ -280,8 +280,8 @@
       4: {
         title: 'district_barbershop',
         image: 'img/Screenshot%20from%202026-09-10%2014-47-59.png',
-        tags: ['Figma', 'Prototyping', 'User Research', 'Design System'],
-        description: 'Desain UI/UX lengkap untuk platform pemesanan perjalanan. Proyek ini mencakup riset pengguna mendalam, wireframing, prototyping interaktif, dan pembuatan design system komprehensif. Fokus pada aksesibilitas dan pengalaman pengguna lintas budaya.',
+        tags: ['Figma', 'Laravel', 'React.JS', 'Tailwind CSS','MySQL'],
+        description: 'District Barbershop platform backend dengan Laravel dan frontend dengan React.JS.mengembangan banyak fitur beserta memberikan solusi pemesanan agar customer yang ingin melakukan pemesanan dapat melakukannya dengan mudah.',
         demo: 'https://dsbarbershop.vercel.app/',
         github: 'https://github.com/rhnpermana/district.git',
         gradient: 'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)',
